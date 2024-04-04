@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>investment decisions</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <h2>investment decisions</h2>
+  <div id="o" class="oi">
+    <label> القيمة الحالى للسنة الاولى</label>
+      <p> التدفق النقدى فى الزمن \ (1-k)<sup>x</sup></p>
+        <input id="input2" type="number" placeholder="التدفق النقدى فى الزمن" relative>
+        <input id="input3" type="number" placeholder="معدل العاءد المطوب" relative>
+        <button onclick="O()">account</button>
+        <output id="output1"></output>
+  </div>
+  <div id="o" class="oi">
+    <label> القيمة الحالي لسنة الثانية</label>
+      <p> التدفق النقدى فى الزمن \ (1-k)<sup>x</sup></p>
+        <input id="input-4" type="number" placeholder="التدفق النقدى فى الزمن" relative>
+        <input id="input-15" type="number" placeholder="معدل العاءد المطوب" relative>
+        <button onclick="OT()">account</button>
+        <output id="output-0"></output>
+  </div>
+  <div id="o" class="oi">
+    <label>  القيمة الحالى لسنة الثالثة</label>
+      <p> التدفق النقدى فى الزمن \ (1-k)<sup>x</sup></p>
+        <input id="input-16" type="number" placeholder="التدفق النقدى فى الزمن" relative>
+        <input id="input-17" type="number" placeholder="معدل العاءد المطوب" relative>
+        <button onclick="OE()">account</button>
+        <output id="output-3"></output>
+  </div>
+  <div id="o" class="oi">
+    <label>القيمة الحالى لسنة الرابعة</label>
+      <p> التدفق النقدى فى الزمن \ (1-k)<sup>x</sup></p>
+        <input id="input-18" type="number" placeholder="التدفق النقدى فى الزمن" relative>
+        <input id="input-19" type="number" placeholder="معدل العاءد المطوب" relative>
+        <button onclick="OQ()">account</button>
+        <output id="output-4"></output>
+  </div>
+  <div id="o" class="oi">
+    <labe> القيمة الحالى لسنة الخامسة</labe>
+      <p> التدفق النقدى فى الزمن \ (1-k)<sup>x</sup></p>
+        <input id="input-10" type="number" placeholder="التدفق النقدى فى الزمن" relative>
+        <input id="input-11" type="number" placeholder="معدل العاءد المطوب" relative>
+        <button onclick="OA()">account</button>
+        <output id="output-5"></output>
+  </div>
+  <div id="o" class="oi">
+     <label>صافي القيمة الحالية</label>
+      <p>قيمة الاستثمار المبدىْي(-) + القيمة الحالي لسنة الاولى + القيمة الحالي لسنة الثانية + القيمة الحالي لسنة الثالثة +القيمة الحالي لسنة الرابعة + القيمة الحالي لسنة الخامسة</p>
+        <input id="po1" type="number" placeholder="قيمة الاستثمار المبدىْي" relative>
+        <input id="po2" type="number" placeholder=" القيمة الحالي لسنة الاولى" relative>
+        <input id="po3" type="number" placeholder="القيمة الحالي لسنة الثانية" relative>
+        <input id="po4" type="number" placeholder=" القيمة الحالي لسنة الثالثة" relative>
+        <input id="po5" type="number" placeholder="القيمة الحالي لسنة الرابعة" relative>
+        <input id="po6" type="number" placeholder=" القيمة الحالي لسنة الخامسة" relative>
+        <button onclick="R()">account</button>
+        <output id="output09"></output>
+  </div>
+  <div id="ui" class="oi">
+     <label>مؤشر الربحية</label>
+      <p> صافي القيمة الحالية \ حجم الاستثمار</p>
+        <input id="po7" type="number" placeholder="قيمة الاستثمار المبدىْي" relative>
+        <input id="po8" type="number" placeholder=" القيمة الحالي لسنة الاولى" relative>
+        <button onclick="RO()">account</button>
+        <output id="output012"></output>
+  </div>
+    <div id="o" class="oi">
+      <label>فترة الاسترداد</label>
+      <p> السنة قبل نمام الاسترداد + (الانفاق الاستثمار يتم في اول السنة  +التدفق النقدي التراكمية قبل تمام الاسترداد÷  صافي التدفقات النقدية للسنة الاخيرة)</p>
+            <input id="input5" type="number" placeholder="السنة قبل نمام الاسترداد" relative> 
+            <input id="input6" type="number" placeholder="الانفاق الاستثمار يتم في اول السنة " relative>
+            <input id="input7" type="number" placeholder="التدفقات النقدية قبل التراكمية قبل تمام الاسترداد" relative>
+            <input id="input8" type="number" placeholder="صافي التدفقات النقدية للسنة الاخيرة " relative>
+            <button onclick="pou()">account</button>
+            <output id="output2"></output>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
